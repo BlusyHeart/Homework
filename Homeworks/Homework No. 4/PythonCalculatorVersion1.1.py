@@ -50,7 +50,7 @@ result = 0
 # Basic user interface
 while True:
 
-    commands = ['+', '-', '/', '*', '%']
+    commands = ['+', '-', '/', '*', '%', 'C']
 
     # Operational menu
     operational_menu(result)
@@ -83,6 +83,8 @@ while True:
                 result = percent(first_number, second_number)
             except Exception as e:
                 print(e)
+        elif command == 'C':
+            result = 0
 
         # The result from the operation
         operational_menu(result)

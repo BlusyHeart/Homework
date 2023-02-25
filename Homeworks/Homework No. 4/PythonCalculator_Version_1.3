@@ -74,6 +74,8 @@ class Engine:
                 break
             elif command == 'C':
                 result = 0
+                self.operational_menu.run(result)
+                continue
 
             if command in commands:
                 try:

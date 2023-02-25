@@ -105,7 +105,7 @@ class Engine:
             # Operational menu
             self.operational_menu.run(result)
 
-            next_calculation = input("Would you like to do a new calculation?")
+            next_calculation = input("Would you like to do a new calculation? Choose: [yes/no]")
             if next_calculation == "yes":
                 continue
             elif next_calculation == "no":

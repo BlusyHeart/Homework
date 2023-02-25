@@ -67,7 +67,6 @@ class Engine:
 
             commands = ['+', '-', '/', '*', '%', 'C']
 
-            # Operational menu
             self.operational_menu.run(result)
 
             command = input("Enter a command: ")
@@ -101,9 +100,14 @@ class Engine:
                 except Exception as e:
                     print(e)
 
-                next_calculation = input("Would you like to do a new calculation?")
-                if next_calculation == "no":
-                    break
+            # Operational menu
+            self.operational_menu.run(result)
+
+            next_calculation = input("Would you like to do a new calculation?")
+            if next_calculation == "yes":
+                continue
+            elif next_calculation == "no":
+                break
         else:
             print("Invalid input")
 
